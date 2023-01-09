@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "prebuild": "yarn lint",
   "scripts": {
-    "build": "tsc",
+    "build": "npm install && tsc",
     "deploy": "vercel deploy --prod",
     "start": "node dist/index.js",
     "start:heroku": "ts-node src/index.ts",
